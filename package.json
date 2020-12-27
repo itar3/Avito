@@ -1,0 +1,16 @@
+{
+  "name": "redisapp",
+  "version": "1.0.0",
+  "description": "simple redis app",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "Ivan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "redis": "^3.0.2"
+  }
+}

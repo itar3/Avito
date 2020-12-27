@@ -1,0 +1,41 @@
+<h1>Add keys</h1>
+{{#if error2}} <span>{{error2}}</span>{{/if}}
+<form class = "form-inline" method = "POST" action = "/user/add">
+    <div class = "form-group">
+        <input type = "text" name = "key" class = "form-control" placeholder="Enter key">
+        <input type = "text" name = "value" class = "form-control" placeholder="Enter value">
+        <input type = "text" name = "time" class = "form-control" placeholder="Enter time to expire (optional)">
+    </div>
+    <input type = "submit" class = "btn btn-primary" value = "add">
+</form>
+
+<h1>Get key</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form class = "form-inline" method= "POST" action="/user/search">
+    <div class = "form-group">
+        <input type = "text" name = "id" class = "form-control" placeholder="Search users by ID">
+    </div>
+    <input type = "submit" class = "btn btn-primary" value = "search">
+    
+    
+</form>
+
+<h1>Find all keys</h1>
+{{#if error3}} <span>{{error3}}</span>{{/if}}
+<form class = "form-inline" method = "POST" action = "/user/allkeys">
+    <div class = "form-group">
+        <input type = "text" name = "allkeys" class = "form-control" placeholder="Search keys">
+    </div>
+    <input type = "submit" class = "btn btn-primary" value = "search">
+</form>
+
+<h1>Delete keys</h1>
+<form class = "form-inline" method = "POST" action = "/user/delete">
+    <div class = "form-group">
+        <input type = "text" name = "deleteId" class = "form-control" placeholder="Search users by ID">
+    </div>
+    <input type = "submit" class = "btn btn-primary" value = "delete">
+</form>
+
+
+
